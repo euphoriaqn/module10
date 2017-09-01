@@ -11,16 +11,9 @@ import java.util.Date;
  */
 public class Program {
     public static void main(String[] args) throws IOException {
-//        ArrayList<Fruit> fruitArrayList = new ArrayList<>();
 
-//        fruitArrayList.add(new Fruit(10, "10/07/2017", 100, Fruit.typeOfFruit.banana));
-//        fruitArrayList.add(new Fruit(5, "10/07/2017", 70, Fruit.typeOfFruit.apple));
-       // TradeShop tradeShop = new TradeShop();
-//        Fruit fruit = new Fruit(5, "10/07/2017", 70, Fruit.typeOfFruit.apple);
-//        Entity entity = new Entity("Ivan", 23, new String[]{"Ivan", "Petro"}, Entity.Type.Animal);
         TradeShop tradeShop = new TradeShop();
-//        String json = tradeShop.addFruits("files/jsonFruits.txt");
-//        tradeShop = JSON.parseObject(json, TradeShop.class);
+
         tradeShop.addFruits("files/jsonFruits.txt");
         tradeShop.save(tradeShop,"files/lavka.txt");
         tradeShop.addFruits("files/jsonFruits.txt");
